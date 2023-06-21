@@ -1,7 +1,7 @@
 ---
 title: "Political Data Science Hackathon 2023"
-subtitle: "Office of the Auditor General"
-author: "Jan Roar Beckstrøm" 
+subtitle: "Office of the Auditor General of Norway"
+author: "Jan Roar Beckstrøm - chief data scientist" 
 date: "06-30-2023"
 date-format: medium
 knitr:
@@ -20,197 +20,187 @@ format:
     center-title-slide: true
     chalkboard: true
     link-external-newwindow: true
-    
 ---
 
 ## Office of the Auditor General
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-* An audit agency under the Norwegian Parliament 
-* Established in 1816 
-* Examine how the government and the state administration do their job 
+-   An audit agency under the Norwegian Parliament
+-   Established in 1816
+-   Examine how the government and the state administration do their job
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="45%"}
-<img src="assets/kesp-og-reven.png" alt="">
+<img src="assets/kesp-og-reven.png"/>
+:::
 :::
 
-::::
+## The Innovation Lab
 
-## The Innovation Lab 
-
-:::: {.columns}
-
+::: columns
 ::: {.column width="60%"}
-* Established in 2017
-* 7 person team 
-* «We automize the boring stuff!» 
-* Yearly hackathon: **hack4reven** 
+-   Established in 2017
+-   7 person team
+-   «We automate the boring stuff!»
+-   Yearly hackathon: **hack4reven**
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="35%"}
-<img src="assets/hack4reven-logo-300x291.png" alt="">
+<img src="assets/hack4reven-logo-300x291.png"/>
+:::
 :::
 
-::::
+## What we do
 
-## What we do 
+-   Use technology to improve the quality of audits
+-   Improve detection of fraud and errors in financial accounts
+-   Audit the use of ML/AI algorithms in the public sector
+-   Participate in international data science collaborations
 
-* Use technology to improve the quality of audits 
-* Improve detection of fraud and errors in financial accounts 
-* Audit the use of ML/AI algorithms in the public sector 
-* Participate in international data science collaborations
+## Example I - Kielland disaster
 
-## noAPI 
+<img src="assets/Kielland_I.png"/>
 
-:::: {.columns}
+## Kielland cont.
 
+<img src="assets/Kielland_II.png"/>
+
+## Example II
+
+
+
+## noAPI
+
+::: columns
 ::: {.column width="50%"}
-* Fetch data from public Norwegian API's data
-* Returns data in tidy format
-* Easy to use 
-* Will be published on CRAN `r emoji::emoji('sunglasses')`
+-   Fetch data from public Norwegian API's data
+-   Returns data in tidy format
+-   Easy to use
+-   Will be published on CRAN `r emoji::emoji('sunglasses')`
 :::
 
 ::: {.column width="5%"}
 :::
 
 ::: {.column width="45%"}
-<img src="assets/noAPI.png" alt="">
+<img src="assets/noAPI.png"/>
 :::
-
-::::
-
-
+:::
 
 ## Problem statement
 
-:::incremental
-* The school system is a central topic of political debate in Norway
-* Compared to other OECD countries we spend significantly more money 
-* And yet Norwegian students often perform worse in the international surveys (e.g. PISA) 
-* We would like to know more about the quality, efficiency and productivity in Norwegian schools
-::: 
-
-
-:::notes
-Debates:
-* Constant debate on the lack of teachers (e.g. a significant drop in the number of applicants to become teachers)
-* Long-standing discussion the fact that Norway performs worse than other Nordic countries on PISA-scores  
-* Requirements on the number of teachers per student (lærerernormen)
-* A relatively recent rule that students will fail high school if they have too much absence in any single subject (fraværsgrensa)
-
-https://www.udir.no/tall-og-forskning/publikasjoner/utdanningsspeilet/utdanningsspeilet-2022/kostnader-til-barnehage-og-grunnopplaringen/hoyere-utgifter-per-elev-i-norge-enn-i-de-fleste-andre-land/ 
-::: 
-
-## Problem statement cont. 
-
-:::incremental 
-* You will work with our R package `{noAPI}`
-* But we will also provide you with data! 
-* Your job will (mainly) be to visualize and analyse
-* Please reach out if you have any questions 
+::: incremental
+-   The school system is a central topic of political debate in Norway
+-   Compared to other OECD countries we spend significantly more money
+-   And yet Norwegian students often perform worse in the international surveys (e.g. PISA)
+-   We would like to know more about the quality, efficiency and productivity in Norwegian schools
 :::
 
+::: notes
+Debates: \* Constant debate on the lack of teachers (e.g. a significant drop in the number of applicants to become teachers) \* Long-standing discussion the fact that Norway performs worse than other Nordic countries on PISA-scores\
+\* Requirements on the number of teachers per student (lærerernormen) \* A relatively recent rule that students will fail high school if they have too much absence in any single subject (fraværsgrensa)
 
-
-## Assignment 
-
-:::incremental
-
-1) Use the [noAPI](https://riksrevisjonen.github.io/noAPI/) package to put together a dataset of all the currently active VGO schools in a single county. 
-
-2) Familiarize yourself with the provided datasets for GSK and VGO schools. Combine the datasets so that it is easier to make comparisons. 
-
-3) Create an interactive report or dashboard to visualize and analyze the data. 
-
-4) Create an unsupervised model that clusters schools based on the performance and resource metrics provided. 
-
+https://www.udir.no/tall-og-forskning/publikasjoner/utdanningsspeilet/utdanningsspeilet-2022/kostnader-til-barnehage-og-grunnopplaringen/hoyere-utgifter-per-elev-i-norge-enn-i-de-fleste-andre-land/
 :::
 
-:::notes
-1) The first task is sort of a warm-up exercise. But we think it is useful for you to to familiarize yourself with how some of the school data was put together. And would also very much welcome feedback on your experience with the package!
+## Problem statement cont.
 
-2) Most of the data is available for each individual school, both for GSK and VGO, but some of the data is only available at the county or municipal level. This is particularly the case for information on expenditure. 
-
-3) The main task of the assignment. If you want to explore how to create a Shiny app that’s something you could do, if not you could also opt for an interactive report. We know that Shiny is not covered as part of the course, but several visualization libraries (like plotly and ggplot2) are, and you will also learn how work with R Markdown.
-
-4) I understand that modelling is covered as part of this course, so if you have time would like you to explore clustering methods to identify groups of similar schools. 
+::: incremental
+-   You will work with our R package `{noAPI}`
+-   But we will also provide you with data!
+-   Your job will (mainly) be to visualize and analyse
+-   Please reach out if you have any questions
 :::
 
-## Possible topics to expore 
+## Assignment
 
-:::incremental
-* Qualitative differences between schools and changes over time
-* Aggregated comparisons of higher-level decision-making units, i.e. municipalities and counties 
-* Comparisons of inputs (e.g. expenditure, teachers), outputs (e.g. number of students) and results (e.g. grades) 
-* Geographic visualizations 
-* Handling of missing data 
-::: 
+::: incremental
+1)  Use the [noAPI](https://riksrevisjonen.github.io/noAPI/) package to put together a dataset of all the currently active VGO schools in a single county.
 
-:::notes
-::: 
+2)  Familiarize yourself with the provided datasets for GSK and VGO schools. Combine the datasets so that it is easier to make comparisons.
 
-## Data 
+3)  Create an interactive report or dashboard to visualize and analyze the data.
 
-* One list of datasets for VGO schools (ca. 500)
-* One list of datasets for GSK schools (ca. 2700)
-* Most data is available for each individual school, but some is only available at the county or 
-municipal level 
-* Can be retrieved from: https://github.com/Riksrevisjonen/pods-hackathon-2023
-
-
-## What we would like to see 
-
-* Documented and version-controlled code 
-* Data visualization done in R
-* Reproducibilty  
-* Creativity
-
-
-## We are hiring! 
-
-* New positions in The Innovation Lab will be advertised this fall 
-* On a constant look-out for auditors with data science skills (e.g. R, Python, quantitative methods) 
-
-
-#  
-
-::: {.r-stack}
-<h2 style="font-size: value;"> Contact information </h2>
+4)  Create an unsupervised model that clusters schools based on the performance and resource metrics provided.
 :::
 
-:::{#title-slide .center}
+::: notes
+1)  The first task is sort of a warm-up exercise. But we think it is useful for you to to familiarize yourself with how some of the school data was put together. And would also very much welcome feedback on your experience with the package!
 
+2)  Most of the data is available for each individual school, both for GSK and VGO, but some of the data is only available at the county or municipal level. This is particularly the case for information on expenditure.
+
+3)  The main task of the assignment. If you want to explore how to create a Shiny app that's something you could do, if not you could also opt for an interactive report. We know that Shiny is not covered as part of the course, but several visualization libraries (like plotly and ggplot2) are, and you will also learn how work with R Markdown.
+
+4)  I understand that modelling is covered as part of this course, so if you have time would like you to explore clustering methods to identify groups of similar schools.
+:::
+
+## Possible topics to expore
+
+::: incremental
+-   Qualitative differences between schools and changes over time
+-   Aggregated comparisons of higher-level decision-making units, i.e. municipalities and counties
+-   Comparisons of inputs (e.g. expenditure, teachers), outputs (e.g. number of students) and results (e.g. grades)
+-   Geographic visualizations
+-   Handling of missing data
+:::
+
+::: notes
+:::
+
+## Data
+
+-   One list of datasets for VGO schools (ca. 500)
+-   One list of datasets for GSK schools (ca. 2700)
+-   Most data is available for each individual school, but some is only available at the county or municipal level
+-   Can be retrieved from: \[SETT INN LENKE TIL GH-repo som vi lager for å dele data\]
+
+## What we would like to see
+
+-   Documented and version-controlled code
+-   Data visualization done in R
+-   Reproducibilty\
+-   Creativity
+
+## We are hiring!
+
+-   New positions in The Innovation Lab will be advertised this fall
+-   On a constant look-out for auditors with data science skills (e.g. R, Python, quantitative methods)
+
+# 
+
+::: r-stack
+<h2 style="font-size: value;">
+
+Contact information
+
+</h2>
+:::
+
+::: {#title-slide .center}
 Anita-Catrin Eriksen (Jul 3rd - Jul 14th)
 
-ace@riksrevisjonen.no
+ace\@riksrevisjonen.no
 
 Aleksander Eilertsen Valberg (Jul 17th - Aug 3rd)
 
-ale@riksrevisjonen.no
+ale\@riksrevisjonen.no
 :::
-
-
 
 ## 
 
-::: {.r-stack}
-<h2 style="font-size: value;"> Thank you and good luck! </h2>
+::: r-stack
+<h2 style="font-size: value;">
+
+Thank you and good luck!
+
+</h2>
 :::
 
-
 ![](assets/reven.jpg){.absolute top="150" left="180" width="700" height="475"}
-
-
-
-
-
