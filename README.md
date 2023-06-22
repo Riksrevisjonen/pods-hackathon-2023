@@ -18,7 +18,7 @@ This repo contains the case description, stakeholder presentation and data for O
 
     ```r
     gsk <- readRDS('data/gsk.RDS')
-    vgs <- readRDS('data/vgs.RDS')
+    vgo <- readRDS('data/vgo.RDS')
     ```
 
 
