@@ -15,7 +15,7 @@ Indeed, the quality of the school system is a central topic of political debate 
 
 As a first step, you will use an R package developed by OAG to explore data from the National School Registry, and combine this with information from the [Central Coordinating Register for Legal Entities](https://www.brreg.no/) as well as geographical information from [The Norwegian Mapping Authority](https://www.kartverket.no/). 
 
-Furthermore, we will provided you with two datasets containing data we put together from the [Norwegian Directorate for Education and Training](https://www.udir.no/tall-og-forskning/statistikk/). These include information on educational inputs (teachers, salaries, expenditure), outputs (number of students) and results (grades, dropouts, absence from school). There is one set of tables for GSK schools and another set of tables for VGO schools. 
+Furthermore, we have provided you with two datasets containing data we put together from the [Norwegian Directorate for Education and Training](https://www.udir.no/tall-og-forskning/statistikk/). These include information on educational inputs (teachers, salaries, expenditure), outputs (number of students) and results (grades, dropouts, absence from school). There is one set of tables for GSK schools and another set of tables for VGO schools. 
 
 It will be your job to combine, analyze and visualize the data. Communication of your findings will be central to the quality of your work. 
 
@@ -26,7 +26,7 @@ It will be your job to combine, analyze and visualize the data. Communication of
 
 2. Familiarize yourself with the provided datasets for GSK and VGO schools and the [education statistics](https://www.udir.no/tall-og-forskning/statistikk/) provided by The Norwegian Directorate for Education and Training. Combine the datasets so that it is easier to make comparisons. 
 
-3. Create an interactive report (e.g. using [Quarto](https://quarto.org/) or a simple dashboard (e.g. with [R Shiny](https://shiny.rstudio.com/) to visualize and analyze the data. Possible topics to explore are: 
+3. Create an interactive report (e.g. using [Quarto](https://quarto.org/) or a simple dashboard/webapp (e.g. with [R Shiny](https://shiny.rstudio.com/) to visualize and analyze the data. Possible topics to explore are: 
 
     * Qualitative differences between schools and changes over time. 
     * Aggregated comparisons of higher-level decision-making units, i.e. municipalities and counties. 
@@ -34,7 +34,7 @@ It will be your job to combine, analyze and visualize the data. Communication of
     * Geographic visualizations 
     * Handling of missing data 
 
-4. Create an unsupervised model that clusters schools based on the performance and resource metrics provided. The purpose is to identify groups of comparable schools where similar political measures might be taken. You should preferably explore different clustering methods.  
+4. Create an unsupervised model that clusters schools based on the performance and resource metrics provided. The purpose is to identify groups of comparable schools where similar political measures might be taken. You should preferably explore different clustering methods.
 
 ## Resources
 
@@ -66,6 +66,7 @@ It will be your job to combine, analyze and visualize the data. Communication of
 
 * https://github.com/amices/mice
 
+* A number of other packages might be useful/needed, for example for shiny and for clustering
 
 ## Contact information 
 

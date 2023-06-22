@@ -122,7 +122,7 @@ https://www.udir.no/tall-og-forskning/publikasjoner/utdanningsspeilet/utdannings
 ## Assignment
 
 ::: incremental
-1)  Use the [noAPI](https://riksrevisjonen.github.io/noAPI/) package to put together a dataset of all the currently active VGO schools in a single county.
+1)  Use the [noAPI](https://riksrevisjonen.github.io/noAPI/) package to put together a dataset of all the currently active VGO schools in Vestland county.
 
 2)  Familiarize yourself with the provided datasets for GSK and VGO schools. Combine the datasets so that it is easier to make comparisons.
 
