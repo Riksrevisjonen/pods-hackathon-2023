@@ -22,13 +22,13 @@ format:
     link-external-newwindow: true
 ---
 
-## Office of the Auditor General
+### Office of the Auditor General of Norway
 
 ::: columns
 ::: {.column width="50%"}
--   An audit agency under the Norwegian Parliament
+-   An audit institution under the Norwegian Parliament
 -   Established in 1816
--   Examine how the government and the state administration do their job
+-   Examines how the government and the state administration do their job
 :::
 
 ::: {.column width="5%"}
@@ -44,7 +44,7 @@ format:
 ::: columns
 ::: {.column width="60%"}
 -   Established in 2017
--   7 person team
+-   7 person data science team
 -   «We automate the boring stuff!»
 -   Yearly hackathon: **hack4reven**
 :::
@@ -72,9 +72,9 @@ format:
 
 <img src="assets/Kielland_II.png"/>
 
-## Example II
+## Example II - Use of machine learning
 
-
+<img src="assets/ML_food.png"/>
 
 ## noAPI
 
@@ -159,7 +159,7 @@ https://www.udir.no/tall-og-forskning/publikasjoner/utdanningsspeilet/utdannings
 -   One list of datasets for VGO schools (ca. 500)
 -   One list of datasets for GSK schools (ca. 2700)
 -   Most data is available for each individual school, but some is only available at the county or municipal level
--   Can be retrieved from: \[SETT INN LENKE TIL GH-repo som vi lager for å dele data\]
+-   Can be retrieved from: [pods-hackathon-2023](https://github.com/Riksrevisjonen/pods-hackathon-2023/)
 
 ## What we would like to see
 
