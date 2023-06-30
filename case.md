@@ -16,7 +16,7 @@ In strict terms the responsibility for primary and lower secondary education bel
 
 Indeed, the quality of the school system is a central topic of political debate in Norway. This includes questions regarding the number of teachers per students, significant differences in student performance between schools and more efficient use of resources. We at the OAG would therefore like to know more about differences in quality, efficiency and productivity in Norwegian schools.
 
-As a first step, you will use an R package developed by OAG called noAPI to explore data from the National School Registry, and combine this with information from the [Central Coordinating Register for Legal Entities](https://www.brreg.no/) as well as geographical information from [The Norwegian Mapping Authority](https://www.kartverket.no/).
+As a first step, you will use an R package developed by OAG called noAPI to explore data from the National School Registry, and combine this with information from the [Central Coordinating Register for Legal Entities](https://www.brreg.no/en/about-us-2/our-registers/about-the-central-coordinating-register-for-legal-entities-ccr/?nocache=1688108792518) as well as geographical information from [The Norwegian Mapping Authority](https://www.kartverket.no/).
 
 Furthermore, we have provided you with two datasets containing data we put together from the [Norwegian Directorate for Education and Training](https://www.udir.no/tall-og-forskning/statistikk/). These include information on educational inputs (teachers, salaries, expenditure), outputs (number of students) and results (grades, dropouts, absence from school). There is one set of tables for GSK schools and another set of tables for VGO schools.
 
